@@ -1,6 +1,6 @@
 'use client';
 
-import { useEffect, useRef, useState } from 'react';
+import { Fragment, useEffect, useRef, useState } from 'react';
 
 export default function WordReveal({
   text = '',
@@ -45,12 +45,14 @@ export default function WordReveal({
     <Tag ref={ref} className={`wr${play ? ' wr-play' : ''} ${className}`} aria-label={String(text)}>
       <span aria-hidden="true">
         {words.map((w, i) => (
-          <span key={i} className="wr-mask">
-            <span className="wr-word" style={{ animationDelay: `${(i * stagger).toFixed(2)}s` }}>
-              {w}
+          <Fragment key={i}>
+            <span className="wr-mask">
+              <span className="wr-word" style={{ animationDelay: `${(i * stagger).toFixed(2)}s` }}>
+                {w}
+              </span>
             </span>
             {i < words.length - 1 ? ' ' : ''}
-          </span>
+          </Fragment>
         ))}
       </span>
     </Tag>

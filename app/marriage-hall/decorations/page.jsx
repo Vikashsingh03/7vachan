@@ -6,28 +6,28 @@ import { ArrowRight, MoveHorizontal, Palette } from 'lucide-react';
 import { Reveal, SectionHeading, Eyebrow, Btn, PageHero } from '@/components/ui';
 
 const BEFORE_IMG =
-  'https://images.unsplash.com/photo-1519167758481-83f550bb49b3?q=80&w=1600&auto=format&fit=crop';
+  '/images/1519167758481-83f550bb49b3.jpg';
 const AFTER_IMG =
-  'https://images.unsplash.com/photo-1519225421980-715cb0215aed?q=80&w=1600&auto=format&fit=crop';
+  '/images/1519225421980-715cb0215aed.jpg';
 
 const themes = [
   {
     name: 'Royal Gold',
     desc: 'Champagne drapes, brass accents and candlelight — timeless palace grandeur for the main ceremony.',
     palette: ['#B98F3E', '#F5E6C8', '#8C6A2B', '#FFFDF7'],
-    img: 'https://images.unsplash.com/photo-1519167758481-83f550bb49b3?q=80&w=1000&auto=format&fit=crop',
+    img: '/images/1519167758481-83f550bb49b3.jpg',
   },
   {
     name: 'Pastel Floral',
     desc: 'Blush roses, lavender and ivory — soft, romantic styling for day functions and receptions.',
     palette: ['#E8B4B8', '#C9A0DC', '#FFF6F0', '#9CAF88'],
-    img: 'https://images.unsplash.com/photo-1490750967868-88aa4486c946?q=80&w=1000&auto=format&fit=crop',
+    img: '/images/1490750967868-88aa4486c946.jpg',
   },
   {
     name: 'Traditional Marigold',
     desc: 'Genda phool torans, brass urlis and vibrant hues — the classic Indian celebration, done richly.',
     palette: ['#E8A020', '#C0392B', '#F5D76E', '#1E5B3A'],
-    img: 'https://images.unsplash.com/photo-1469371670807-013ccf25f16a?q=80&w=1000&auto=format&fit=crop',
+    img: '/images/1469371670807-013ccf25f16a.jpg',
   },
 ];
 

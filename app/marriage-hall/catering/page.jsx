@@ -177,7 +177,7 @@ export default function CateringPage() {
           <Reveal>
             <div className="relative rounded-[32px] overflow-hidden shadow-luxe">
               <Image
-                src="https://images.unsplash.com/photo-1555244162-803834f70033?q=80&w=1800&auto=format&fit=crop"
+                src="/images/1555244162-803834f70033.jpg"
                 alt="Catering buffet"
                 width={1800}
                 height={700}

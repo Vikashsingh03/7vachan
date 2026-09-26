@@ -6,8 +6,8 @@ import SectionHeading from '@/components/SectionHeading';
 import { menuItems } from './menu-data';
 import WordReveal from '@/components/WordReveal';
 
-const HERO_IMG = 'https://images.unsplash.com/photo-1414235077428-338989a2e8c0?q=80&w=1600&auto=format&fit=crop';
-const STORY_IMG = 'https://images.unsplash.com/photo-1544025162-d76694265947?q=80&w=1200&auto=format&fit=crop';
+const HERO_IMG = '/images/1414235077428-338989a2e8c0.jpg';
+const STORY_IMG = '/images/1544025162-d76694265947.jpg';
 
 function Eyebrow({ children, dark = false }) {
   return (
@@ -32,19 +32,19 @@ const spaces = [
     name: 'Main Dining Hall',
     copy: 'High ceilings, warm lamplight and the murmur of a full house — the heart of 7 Vachan Kitchen.',
     detail: 'Seats 80 · Family tables',
-    image: 'https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?q=80&w=1200&auto=format&fit=crop',
+    image: '/images/1517248135467-4c7edcad34c4.jpg',
   },
   {
     name: 'Private Family Lounge',
     copy: 'A quiet, curtained corner for unhurried family dinners and small celebrations.',
     detail: 'Seats 24 · Semi-private',
-    image: 'https://images.unsplash.com/photo-1552566626-52f8b828add9?q=80&w=1200&auto=format&fit=crop',
+    image: '/images/1552566626-52f8b828add9.jpg',
   },
   {
     name: 'Terrace Evening Seating',
     copy: 'Open air under the evening sky — kebabs off the tandoor, breeze on, city lights below.',
     detail: 'Seats 40 · 6 PM onwards',
-    image: 'https://images.unsplash.com/photo-1514933651103-005eec06c04b?q=80&w=1200&auto=format&fit=crop',
+    image: '/images/1514933651103-005eec06c04b.jpg',
   },
 ];
 
@@ -161,7 +161,7 @@ export default function RestaurantPage() {
           <Reveal>
             <div className="text-center max-w-2xl mx-auto mb-12">
               <Eyebrow dark>From the Pass</Eyebrow>
-              <WordReveal as="h2" playOnView text="Signature dishes" className="page-title text-cream mb-4 page-title" />
+              <WordReveal as="h2" playOnView text="Signature dishes" className="page-title text-cream mb-4" />
               <p className="text-cream/60 leading-relaxed">The dishes our kitchen is proudest of — worth ordering even if you came for something else.</p>
             </div>
           </Reveal>

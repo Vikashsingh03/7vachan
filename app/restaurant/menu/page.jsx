@@ -204,7 +204,7 @@ export default function MenuPage() {
           <Reveal>
             <div className="mt-16 bg-ink text-cream rounded-[28px] p-10 md:p-14 text-center relative overflow-hidden">
               <Image
-                src="https://images.unsplash.com/photo-1555396273-367ea4eb4db5?q=80&w=1600&auto=format&fit=crop"
+                src="/images/1555396273-367ea4eb4db5.jpg"
                 alt="Table spread at 7 Vachan Kitchen"
                 fill
                 className="object-cover opacity-20"

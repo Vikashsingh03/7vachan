@@ -8,8 +8,7 @@ export const CONTACT = {
   reception: "Open 24 hours",
 };
 
-const img = (id, w = 1600) =>
-  `https://images.unsplash.com/${id}?q=80&w=${w}&auto=format&fit=crop`;
+const img = (id) => `/images/${id.replace('photo-', '')}.jpg`;
 
 export const rooms = [
   {

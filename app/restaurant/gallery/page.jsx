@@ -6,8 +6,7 @@ import { X, ChevronLeft, ChevronRight, Expand } from 'lucide-react';
 import Reveal from '@/components/Reveal';
 import PageHero from '@/components/PageHero';
 
-const img = (id, w = 1200) =>
-  `https://images.unsplash.com/photo-${id}?q=80&w=${w}&auto=format&fit=crop`;
+const img = (id) => `/images/${id}.jpg`;
 
 const tabs = ['All', 'Interiors', 'Dishes', 'Tandoor', 'Desserts'];
 

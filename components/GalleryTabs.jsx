@@ -5,15 +5,15 @@ import { useState } from 'react';
 const tabs = ['Everything', 'Hotel', 'Restaurant', 'Marriage Hall'];
 
 const photos = [
-  { src: 'https://images.unsplash.com/photo-1566073771259-6a8506099945?q=80&w=900&auto=format&fit=crop', label: 'Arrival Lobby', cat: 'Hotel' },
-  { src: 'https://images.unsplash.com/photo-1414235077428-338989a2e8c0?q=80&w=900&auto=format&fit=crop', label: 'Main Dining Room', cat: 'Restaurant' },
-  { src: 'https://images.unsplash.com/photo-1519167758481-83f550bb49b3?q=80&w=900&auto=format&fit=crop', label: 'Mandap at Golden Hour', cat: 'Marriage Hall' },
-  { src: 'https://images.unsplash.com/photo-1582719508461-905c673771fd?q=80&w=900&auto=format&fit=crop', label: 'Deluxe Suite', cat: 'Hotel' },
-  { src: 'https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?q=80&w=900&auto=format&fit=crop', label: 'Evening Service', cat: 'Restaurant' },
-  { src: 'https://images.unsplash.com/photo-1511795409834-ef04bbd61622?q=80&w=900&auto=format&fit=crop', label: 'Reception Hall', cat: 'Marriage Hall' },
-  { src: 'https://images.unsplash.com/photo-1590490360182-c33d57733427?q=80&w=900&auto=format&fit=crop', label: 'Beach View Room', cat: 'Hotel' },
-  { src: 'https://images.unsplash.com/photo-1552566626-52f8b828add9?q=80&w=900&auto=format&fit=crop', label: 'Kitchen Pass', cat: 'Restaurant' },
-  { src: 'https://images.unsplash.com/photo-1465495976277-4387d4b0b4c6?q=80&w=900&auto=format&fit=crop', label: 'Garden Pheras', cat: 'Marriage Hall' },
+  { src: '/images/1566073771259-6a8506099945.jpg', label: 'Arrival Lobby', cat: 'Hotel' },
+  { src: '/images/1414235077428-338989a2e8c0.jpg', label: 'Main Dining Room', cat: 'Restaurant' },
+  { src: '/images/1519167758481-83f550bb49b3.jpg', label: 'Mandap at Golden Hour', cat: 'Marriage Hall' },
+  { src: '/images/1582719508461-905c673771fd.jpg', label: 'Deluxe Suite', cat: 'Hotel' },
+  { src: '/images/1517248135467-4c7edcad34c4.jpg', label: 'Evening Service', cat: 'Restaurant' },
+  { src: '/images/1511795409834-ef04bbd61622.jpg', label: 'Reception Hall', cat: 'Marriage Hall' },
+  { src: '/images/1590490360182-c33d57733427.jpg', label: 'Beach View Room', cat: 'Hotel' },
+  { src: '/images/1552566626-52f8b828add9.jpg', label: 'Kitchen Pass', cat: 'Restaurant' },
+  { src: '/images/1465495976277-4387d4b0b4c6.jpg', label: 'Garden Pheras', cat: 'Marriage Hall' },
 ];
 
 export default function GalleryTabs() {

@@ -15,7 +15,7 @@ import { Reveal, SectionHeading, Eyebrow, Btn, Stars } from '@/components/ui';
 import WordReveal from '@/components/WordReveal';
 
 const HERO_IMG =
-  'https://images.unsplash.com/photo-1583939003579-730e3918a45a?q=80&w=2000&auto=format&fit=crop';
+  '/images/1583939003579-730e3918a45a.jpg';
 
 const spaces = [
   {
@@ -24,7 +24,7 @@ const spaces = [
     desc: 'Pillarless, air-conditioned, 22ft ceilings with imported chandeliers.',
     seated: '600 Seated',
     floating: '900 Floating',
-    img: 'https://images.unsplash.com/photo-1519167758481-83f550bb49b3?q=80&w=1200&auto=format&fit=crop',
+    img: '/images/1519167758481-83f550bb49b3.jpg',
   },
   {
     name: 'Terrace',
@@ -32,7 +32,7 @@ const spaces = [
     desc: 'Open-air rooftop made for sangeet and reception evenings under the stars.',
     seated: '120 Seated',
     floating: '200 Floating',
-    img: 'https://images.unsplash.com/photo-1514525253161-7a46d19cd819?q=80&w=1200&auto=format&fit=crop',
+    img: '/images/1514525253161-7a46d19cd819.jpg',
   },
   {
     name: 'Garden Lawn',
@@ -40,7 +40,7 @@ const spaces = [
     desc: 'Mature landscaping and fairy-lit paths — ideal for Mehendi and Haldi.',
     seated: '400 Seated',
     floating: '600 Floating',
-    img: 'https://images.unsplash.com/photo-1464366400600-7168b8af9bc3?q=80&w=1200&auto=format&fit=crop',
+    img: '/images/1464366400600-7168b8af9bc3.jpg',
   },
 ];
 
@@ -70,12 +70,12 @@ const packages = [
 ];
 
 const galleryStrip = [
-  'https://images.unsplash.com/photo-1519225421980-715cb0215aed?q=80&w=800&auto=format&fit=crop',
-  'https://images.unsplash.com/photo-1469371670807-013ccf25f16a?q=80&w=800&auto=format&fit=crop',
-  'https://images.unsplash.com/photo-1606800052052-a08af7148866?q=80&w=800&auto=format&fit=crop',
-  'https://images.unsplash.com/photo-1520854221256-17451cc331bf?q=80&w=800&auto=format&fit=crop',
-  'https://images.unsplash.com/photo-1519741497674-611481863552?q=80&w=800&auto=format&fit=crop',
-  'https://images.unsplash.com/photo-1465495976277-4387d4b0b4c6?q=80&w=800&auto=format&fit=crop',
+  '/images/1519225421980-715cb0215aed.jpg',
+  '/images/1469371670807-013ccf25f16a.jpg',
+  '/images/1606800052052-a08af7148866.jpg',
+  '/images/1520854221256-17451cc331bf.jpg',
+  '/images/1519741497674-611481863552.jpg',
+  '/images/1465495976277-4387d4b0b4c6.jpg',
 ];
 
 const testimonials = [
@@ -263,7 +263,7 @@ export default function MarriageHallPage() {
           <Reveal>
             <div className="relative rounded-[32px] overflow-hidden h-[440px] shadow-card group">
               <Image
-                src="https://images.unsplash.com/photo-1519225421980-715cb0215aed?q=80&w=1200&auto=format&fit=crop"
+                src="/images/1519225421980-715cb0215aed.jpg"
                 alt="Wedding decoration"
                 fill
                 className="object-cover transition-transform duration-700 group-hover:scale-105"

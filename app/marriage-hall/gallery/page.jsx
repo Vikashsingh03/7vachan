@@ -5,8 +5,7 @@ import Image from 'next/image';
 import { X, ChevronLeft, ChevronRight, Expand } from 'lucide-react';
 import { Reveal, PageHero } from '@/components/ui';
 
-const U = (id, w = 1000) =>
-  `https://images.unsplash.com/${id}?q=80&w=${w}&auto=format&fit=crop`;
+const U = (id) => `/images/${id.replace('photo-', '')}.jpg`;
 
 const images = [
   { src: U('photo-1519225421980-715cb0215aed'), label: 'Reception in bloom', category: 'Decor' },

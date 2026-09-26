@@ -21,21 +21,21 @@ const spaces = [
     capacity: 'Up to 20 guests',
     copy: 'A wood-panelled room with its own entrance and a single long table — made for birthdays, anniversaries and quiet deals.',
     features: ['Dedicated server', 'Custom menu on request', 'Projector for speeches'],
-    image: 'https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?q=80&w=1400&auto=format&fit=crop',
+    image: '/images/1517248135467-4c7edcad34c4.jpg',
   },
   {
     name: 'The Royal Alcove',
     capacity: 'Up to 12 guests',
     copy: 'A curtained alcove off the main hall with low light and brass lamps — our most requested corner for family dinners.',
     features: ['Semi-private setting', 'Set thali menus', 'Cake service included'],
-    image: 'https://images.unsplash.com/photo-1559339352-11d035aa65de?q=80&w=1400&auto=format&fit=crop',
+    image: '/images/1559339352-11d035aa65de.jpg',
   },
   {
     name: 'Terrace Pavilion',
     capacity: 'Up to 50 guests',
     copy: 'An open-air terrace under fairy lights, steps from the tandoor — perfect for sangeet dinners and large celebrations.',
     features: ['Live tandoor counter', 'Space for performances', 'Valet parking'],
-    image: 'https://images.unsplash.com/photo-1514933651103-005eec06c04b?q=80&w=1400&auto=format&fit=crop',
+    image: '/images/1514933651103-005eec06c04b.jpg',
   },
 ];
 
@@ -51,7 +51,7 @@ export default function DiningPage() {
     <main>
       <section className="relative min-h-[68vh] flex items-center justify-center overflow-hidden bg-ink">
         <Image
-          src="https://images.unsplash.com/photo-1552566626-52f8b828add9?q=80&w=1600&auto=format&fit=crop"
+          src="/images/1552566626-52f8b828add9.jpg"
           alt="Warm private dining corner"
           fill
           priority
@@ -133,7 +133,7 @@ export default function DiningPage() {
 
       <section className="py-24 md:py-28 bg-ink text-cream relative overflow-hidden">
         <Image
-          src="https://images.unsplash.com/photo-1414235077428-338989a2e8c0?q=80&w=1600&auto=format&fit=crop"
+          src="/images/1414235077428-338989a2e8c0.jpg"
           alt="Candlelit table"
           fill
           className="object-cover opacity-15"

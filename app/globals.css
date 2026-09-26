@@ -40,6 +40,7 @@
     letter-spacing: -0.025em;
     line-height: 1;
     color: #faf7f2;
+    text-wrap: balance;
   }
   .type-hero-eyebrow {
     font-family: Jost, sans-serif;
@@ -68,6 +69,7 @@
     font-size: clamp(2rem, 1.6rem + 1.9vw, 2.875rem);
     letter-spacing: -0.015em;
     line-height: 1.1;
+    text-wrap: balance;
   }
   .type-eyebrow {
     font-family: Jost, sans-serif;
@@ -115,6 +117,7 @@
     letter-spacing: -0.02em;
     line-height: 1.05;
     color: #faf7f2;
+    text-wrap: balance;
   }
 
   .btn-gold {

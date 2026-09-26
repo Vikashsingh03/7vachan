@@ -8,7 +8,7 @@ import { Mail, Lock, Eye, EyeOff } from 'lucide-react';
 import WordReveal from '@/components/WordReveal';
 
 const BG_IMG =
-  'https://images.unsplash.com/photo-1583939003579-730e3918a45a?q=80&w=1800&auto=format&fit=crop';
+  '/images/1583939003579-730e3918a45a.jpg';
 
 const inputCls =
   'w-full rounded-xl border border-white/15 bg-white/10 pl-11 pr-4 py-3.5 text-sm text-cream outline-none focus:border-gold focus:ring-2 focus:ring-gold/30 transition placeholder:text-cream/35';

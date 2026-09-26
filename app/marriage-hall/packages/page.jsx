@@ -11,7 +11,7 @@ const packages = [
     price: '₹1,100',
     unit: 'per plate',
     desc: 'Everything a beautifully run celebration needs, without excess. Suited to intimate weddings and family functions.',
-    img: 'https://images.unsplash.com/photo-1519225421980-715cb0215aed?q=80&w=1000&auto=format&fit=crop',
+    img: '/images/1519225421980-715cb0215aed.jpg',
     inclusions: [
       'Grand Banquet Hall for 6 hours',
       'Classic stage decoration',
@@ -29,7 +29,7 @@ const packages = [
     price: '₹1,450',
     unit: 'per plate',
     desc: 'For celebrations spanning several functions, with styling and service scaled to match.',
-    img: 'https://images.unsplash.com/photo-1519167758481-83f550bb49b3?q=80&w=1000&auto=format&fit=crop',
+    img: '/images/1519167758481-83f550bb49b3.jpg',
     loved: true,
     inclusions: [
       'All venue spaces for a full day',
@@ -49,7 +49,7 @@ const packages = [
     price: '₹1,900',
     unit: 'per plate',
     desc: 'A multi-day wedding hosted end to end — every space, every service, planned around your family.',
-    img: 'https://images.unsplash.com/photo-1469371670807-013ccf25f16a?q=80&w=1000&auto=format&fit=crop',
+    img: '/images/1469371670807-013ccf25f16a.jpg',
     inclusions: [
       'Exclusive multi-day use of the entire estate',
       'Bespoke set design by our creative director',
