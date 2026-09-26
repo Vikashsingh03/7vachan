@@ -156,7 +156,7 @@ export default function Navbar() {
         }`}
       >
         <div
-          className={`container-luxe flex items-center justify-between transition-[height] duration-500 ease-luxe ${
+          className={`container-luxe flex items-center justify-between ${
             dark ? 'h-[72px] lg:h-[88px]' : 'h-16 lg:h-[72px]'
           }`}
         >

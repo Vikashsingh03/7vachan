@@ -2,6 +2,7 @@
 
 import { useEffect, useState } from 'react';
 import Link from 'next/link';
+import { useRouter } from 'next/navigation';
 import {
   CalendarDays,
   CalendarX,
@@ -34,6 +35,7 @@ function readJSON(key, fallback) {
 }
 
 export default function MyBookingsPage() {
+  const router = useRouter();
   const [loaded, setLoaded] = useState(false);
   const [user, setUser] = useState(null);
   const [bookings, setBookings] = useState([]);
@@ -76,7 +78,7 @@ export default function MyBookingsPage() {
     } catch {
       return;
     }
-    window.location.href = '/';
+    router.push('/');
   }
 
   if (!loaded) {

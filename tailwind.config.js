@@ -56,7 +56,7 @@ module.exports = {
       },
       animation: {
         fadeUp: 'fadeUp .9s cubic-bezier(0.22, 1, 0.36, 1) both',
-        kenburns: 'kenburns 14s ease-out forwards',
+        kenburns: 'kenburns 14s cubic-bezier(0.22, 1, 0.36, 1) forwards',
         floaty: 'floaty 5s ease-in-out infinite',
         slowzoom: 'slowzoom 14s ease-in-out infinite alternate',
       },

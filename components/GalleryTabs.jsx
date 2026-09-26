@@ -46,7 +46,7 @@ export default function GalleryTabs() {
             <div className="relative w-full h-full overflow-hidden group">
               <img src={photo.src} alt={photo.label} loading="lazy" className="zoom w-full h-full object-cover" />
               <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
-              <p className="absolute bottom-4 left-5 text-cream font-display text-xl opacity-0 group-hover:opacity-100 translate-y-3 group-hover:translate-y-0 transition-all duration-500">
+              <p className="absolute bottom-4 left-5 text-cream font-display text-xl opacity-0 group-hover:opacity-100 translate-y-3 group-hover:translate-y-0 transition-[opacity,transform] duration-500 ease-luxe">
                 {photo.label}
               </p>
             </div>

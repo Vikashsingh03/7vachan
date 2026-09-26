@@ -40,8 +40,8 @@ export default function FaqsPage() {
                     <ChevronDown className="w-5 h-5" />
                   </span>
                 </button>
-                <div className={`grid transition-all duration-400 ${open === i ? "grid-rows-[1fr] pb-8" : "grid-rows-[0fr]"}`}>
-                  <p className="overflow-hidden text-ink/65 leading-relaxed">{f.a}</p>
+                <div className={`grid transition-[grid-template-rows] duration-500 ease-luxe ${open === i ? "grid-rows-[1fr]" : "grid-rows-[0fr]"}`}>
+                  <p className="overflow-hidden text-ink/65 leading-relaxed"><span className="block pb-8">{f.a}</span></p>
                 </div>
               </div>
             </Reveal>

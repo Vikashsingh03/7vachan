@@ -51,7 +51,7 @@ function Hero() {
       {slides.map((s, i) => (
         <div
           key={s.src}
-          className={`absolute inset-0 transition-opacity duration-[1200ms] ease-out ${
+          className={`absolute inset-0 transition-opacity duration-[1200ms] ease-luxe ${
             i === active ? "opacity-100" : "opacity-0"
           }`}
         >
@@ -104,10 +104,14 @@ function Hero() {
               type="button"
               aria-label={`Go to slide ${i + 1}`}
               onClick={() => setActive(i)}
-              className={`h-[2px] rounded-full transition-all duration-[600ms] ${
-                i === active ? "w-10 bg-gold" : "w-5 bg-cream/35 hover:bg-cream/60"
-              }`}
-            />
+              className="h-[2px] w-10 rounded-full"
+            >
+              <span
+                className={`block h-full rounded-full origin-left transition-transform duration-[600ms] ease-luxe ${
+                  i === active ? "scale-x-100 bg-gold" : "scale-x-50 bg-cream/35 hover:bg-cream/60"
+                }`}
+              />
+            </button>
           ))}
         </div>
         <div className="flex flex-col items-center gap-2 text-cream/70">
@@ -553,8 +557,8 @@ function FaqTeaser() {
                 <span className="font-display text-xl md:text-2xl text-ink">{f.q}</span>
                 <ChevronDown className={`w-5 h-5 text-gold shrink-0 transition-transform duration-300 ${open === i ? "rotate-180" : ""}`} />
               </button>
-              <div className={`grid transition-all duration-300 ${open === i ? "grid-rows-[1fr] pb-6" : "grid-rows-[0fr]"}`}>
-                <p className="overflow-hidden text-ink/60 leading-relaxed">{f.a}</p>
+              <div className={`grid transition-[grid-template-rows] duration-500 ease-luxe ${open === i ? "grid-rows-[1fr]" : "grid-rows-[0fr]"}`}>
+                <p className="overflow-hidden text-ink/60 leading-relaxed"><span className="block pb-6">{f.a}</span></p>
               </div>
             </div>
           </Reveal>

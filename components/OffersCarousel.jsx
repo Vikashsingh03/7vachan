@@ -49,7 +49,7 @@ export default function OffersCarousel() {
       {offers.map((offer, i) => (
         <div
           key={offer.title}
-          className={`absolute inset-0 transition-opacity duration-1000 ${i === index ? 'opacity-100' : 'opacity-0 pointer-events-none'}`}
+          className={`absolute inset-0 transition-opacity duration-[1200ms] ease-luxe ${i === index ? 'opacity-100' : 'opacity-0 pointer-events-none'}`}
         >
           <img src={offer.image} alt={offer.title} className="absolute inset-0 w-full h-full object-cover" />
           <div className="absolute inset-0 bg-gradient-to-r from-black/80 via-black/45 to-transparent" />
@@ -72,8 +72,12 @@ export default function OffersCarousel() {
             key={offer.title}
             onClick={() => setIndex(i)}
             aria-label={`Go to ${offer.title}`}
-            className={`h-1.5 rounded-full transition-all duration-500 ${i === index ? 'w-10 bg-gold' : 'w-4 bg-white/40 hover:bg-white/70'}`}
-          />
+            className="h-1.5 w-10 rounded-full"
+          >
+            <span
+              className={`block h-full rounded-full origin-left transition-transform duration-500 ease-luxe ${i === index ? 'scale-x-100 bg-gold' : 'scale-x-[0.4] bg-white/40 hover:bg-white/70'}`}
+            />
+          </button>
         ))}
       </div>
       <div className="absolute bottom-5 right-6 flex gap-3 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
