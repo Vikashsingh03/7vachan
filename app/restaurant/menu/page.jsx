@@ -5,6 +5,7 @@ import Image from 'next/image';
 import Link from 'next/link';
 import { Search, ArrowRight, UtensilsCrossed, X } from 'lucide-react';
 import Reveal from '@/components/Reveal';
+import CountUp from '@/components/CountUp';
 import PageHero from '@/components/PageHero';
 import { menuItems, menuCategories } from '../menu-data';
 import WordReveal from '@/components/WordReveal';
@@ -182,7 +183,7 @@ export default function MenuPage() {
                         <h3 className="font-display text-2xl font-medium text-ink group-hover:text-gold transition-colors">
                           {d.name}
                         </h3>
-                        <p className="font-display text-xl text-gold shrink-0">₹{d.price}</p>
+                        <p className="font-display text-xl text-gold shrink-0"><CountUp value={d.price} /></p>
                       </div>
                       <p className="text-ink/60 text-sm leading-relaxed mb-4">{d.description}</p>
                       {(d.tags || []).length > 0 && (

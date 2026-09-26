@@ -14,10 +14,7 @@ import {
 } from 'lucide-react';
 import { Reveal, Eyebrow, Btn } from '@/components/ui';
 import WordReveal from '@/components/WordReveal';
-
-function formatINR(n) {
-  return `₹${Number(n).toLocaleString('en-IN')}`;
-}
+import CountUp from '@/components/CountUp';
 
 function capitalize(s) {
   if (!s) return s;
@@ -199,7 +196,7 @@ export default function MyBookingsPage() {
                   </div>
                   <div className="text-right">
                     <p className="text-xs uppercase tracking-[0.2em] text-ink/40 mb-1">Total</p>
-                    <p className="font-display text-3xl">{formatINR(b.total)}</p>
+                    <p className="font-display text-3xl"><CountUp value={Number(b.total) || 0} /></p>
                   </div>
                 </div>
               </Reveal>

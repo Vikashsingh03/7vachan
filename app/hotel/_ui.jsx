@@ -3,6 +3,7 @@
 import Link from "next/link";
 import Image from "next/image";
 import { ArrowRight, Star, Users, Ruler } from "lucide-react";
+import CountUp from "@/components/CountUp";
 
 export function Eyebrow({ children }) {
   return (
@@ -90,7 +91,7 @@ export function RoomCard({ room }) {
         <div className="flex items-center justify-between pt-5 border-t border-hairline">
           <p className="text-ink">
             <span className="text-xs uppercase tracking-widest text-ink/50 block">From</span>
-            <span className="font-display text-2xl font-semibold">₹{room.price.toLocaleString("en-IN")}</span>
+            <span className="font-display text-2xl font-semibold"><CountUp value={room.price} /></span>
             <span className="text-ink/50 text-sm"> / night</span>
           </p>
           <span className="gold-link">

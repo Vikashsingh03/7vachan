@@ -18,6 +18,7 @@ import Reveal from "@/components/Reveal";
 import { Btn } from "../_ui";
 import { rooms, CONTACT } from "../_data";
 import WordReveal from "@/components/WordReveal";
+import CountUp from "@/components/CountUp";
 
 const steps = ["Dates & Room", "Guest Details", "Review & Confirm"];
 
@@ -95,7 +96,6 @@ function BookingFlow() {
 
   const fmtDate = (d) =>
     d ? new Date(`${d}T00:00:00`).toLocaleDateString("en-IN", { day: "2-digit", month: "short", year: "numeric" }) : "—";
-  const inr = (n) => `₹${n.toLocaleString("en-IN")}`;
 
   return (
     <>
@@ -179,7 +179,7 @@ function BookingFlow() {
                                 </span>
                               </span>
                               <span className="font-display text-xl text-ink whitespace-nowrap">
-                                ₹{r.price.toLocaleString("en-IN")}
+                                <CountUp value={r.price} />
                                 <span className="text-sm text-ink/50">/night</span>
                               </span>
                             </button>
@@ -267,13 +267,13 @@ function BookingFlow() {
                         <div className="border-t border-[#E3DACA] pt-4 space-y-2">
                           <div className="flex justify-between">
                             <span className="text-ink/55">Room total</span>
-                            <span className="text-ink font-medium">{inr(total)}</span>
+                            <span className="text-ink font-medium"><CountUp value={total} /></span>
                           </div>
                           <div className="flex justify-between">
                             <span className="text-ink/55">Advance due online (20%)</span>
-                            <span className="font-display text-2xl text-gold font-semibold">{inr(advance)}</span>
+                            <span className="font-display text-2xl text-gold font-semibold"><CountUp value={advance} /></span>
                           </div>
-                          <p className="text-xs text-ink/50">Balance of {inr(total - advance)} is settled at the hotel.</p>
+                          <p className="text-xs text-ink/50">Balance of <CountUp value={total - advance} /> is settled at the hotel.</p>
                         </div>
                       </div>
                       <p className="text-xs text-ink/50 leading-relaxed">
@@ -324,12 +324,12 @@ function BookingFlow() {
                   </div>
                   <div className="border-t border-cream/15 mt-6 pt-6">
                     <div className="flex justify-between text-cream/70 text-sm mb-2">
-                      <span>{inr(room.price)} × {nights} night{nights !== 1 ? "s" : ""}</span>
-                      <span>{inr(total)}</span>
+                      <span><CountUp value={room.price} /> × {nights} night{nights !== 1 ? "s" : ""}</span>
+                      <span><CountUp value={total} /></span>
                     </div>
                     <div className="flex justify-between items-center">
                       <span className="text-xs uppercase tracking-[0.25em] text-gold">Total</span>
-                      <span className="font-display text-3xl text-gold">{inr(total)}</span>
+                      <span className="font-display text-3xl text-gold"><CountUp value={total} /></span>
                     </div>
                   </div>
                 </aside>

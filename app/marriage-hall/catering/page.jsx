@@ -2,6 +2,7 @@ import Image from 'next/image';
 import { ArrowRight, Check, ChefHat, Mail, Phone, UtensilsCrossed } from 'lucide-react';
 import { Reveal, SectionHeading, Eyebrow, Btn, PageHero } from '@/components/ui';
 import WordReveal from '@/components/WordReveal';
+import CountUp from '@/components/CountUp';
 
 const tiers = [
   {
@@ -112,7 +113,7 @@ export default function CateringPage() {
                   )}
                   <h2 className={`font-display text-3xl ${tier.loved ? 'text-cream' : 'text-ink'}`}>{tier.name}</h2>
                   <p className="mt-3">
-                    <span className="font-display text-5xl text-gold">{tier.price}</span>
+                    <span className="font-display text-5xl text-gold"><CountUp value={Number(tier.price.replace(/[^0-9]/g, ''))} /></span>
                     <span className={`text-sm ml-2 ${tier.loved ? 'text-cream/60' : 'text-ink/50'}`}>{tier.unit}</span>
                   </p>
                   <p className={`text-sm mt-4 leading-relaxed ${tier.loved ? 'text-cream/70' : 'text-ink/60'}`}>

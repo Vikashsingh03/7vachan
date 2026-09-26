@@ -19,6 +19,7 @@ import Reveal from "@/components/Reveal";
 import SectionHeading from "@/components/SectionHeading";
 import { Eyebrow, Btn, RoomCard } from "./_ui";
 import WordReveal from "@/components/WordReveal";
+import CountUp from "@/components/CountUp";
 import { CONTACT, rooms, offers, HERO_IMAGES } from "./_data";
 
 function ImageHero() {
@@ -111,7 +112,7 @@ function Property() {
 const stayInfo = [
   { icon: Clock, label: "Check-in", value: CONTACT.checkIn },
   { icon: Clock, label: "Check-out", value: CONTACT.checkOut },
-  { icon: BedDouble, label: "Rooms from", value: "₹1,200 per night" },
+  { icon: BedDouble, label: "Rooms from", price: 1200, unit: "per night" },
   { icon: ConciergeBell, label: "Reception", value: CONTACT.reception },
 ];
 
@@ -134,7 +135,7 @@ function YourStay() {
                   <s.icon className="w-6 h-6" />
                 </span>
                 <p className="text-[11px] uppercase tracking-[0.3em] text-gold mb-2">{s.label}</p>
-                <p className="font-display text-2xl text-ink">{s.value}</p>
+                <p className="font-display text-2xl text-ink">{s.price != null ? (<><CountUp value={s.price} /> {s.unit}</>) : s.value}</p>
               </div>
             </Reveal>
           ))}

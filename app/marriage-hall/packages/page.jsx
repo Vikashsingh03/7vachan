@@ -2,6 +2,7 @@ import Image from 'next/image';
 import { ArrowRight, Check, Sparkles, Phone, Mail, MapPin } from 'lucide-react';
 import { Reveal, SectionHeading, Eyebrow, Btn, PageHero } from '@/components/ui';
 import WordReveal from '@/components/WordReveal';
+import CountUp from '@/components/CountUp';
 
 const packages = [
   {
@@ -103,7 +104,7 @@ export default function PackagesPage() {
                       {pkg.guests}
                     </p>
                     <p className="mt-4">
-                      <span className="font-display text-5xl text-gold">{pkg.price}</span>
+                      <span className="font-display text-5xl text-gold"><CountUp value={Number(pkg.price.replace(/[^0-9]/g, ''))} /></span>
                       <span className={`text-sm ml-2 ${pkg.loved ? 'text-cream/60' : 'text-ink/50'}`}>{pkg.unit}</span>
                     </p>
                     <p className={`text-sm mt-4 leading-relaxed ${pkg.loved ? 'text-cream/70' : 'text-ink/60'}`}>

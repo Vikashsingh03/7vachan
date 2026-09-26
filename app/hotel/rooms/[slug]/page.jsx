@@ -17,6 +17,7 @@ import {
   Check,
 } from "lucide-react";
 import Reveal from "@/components/Reveal";
+import CountUp from "@/components/CountUp";
 import { notFound } from "next/navigation";
 import Gallery from "./Gallery";
 import { rooms, CONTACT } from "../../_data";
@@ -84,7 +85,7 @@ export default function RoomDetailPage({ params }) {
                   </div>
                   <p className="pb-6 mb-6 border-b border-[#E3DACA]">
                     <span className="font-display text-4xl font-semibold text-ink">
-                      ₹{room.price.toLocaleString("en-IN")}
+                      <CountUp value={room.price} />
                     </span>
                     <span className="text-ink/50"> / night</span>
                   </p>
@@ -163,7 +164,7 @@ export default function RoomDetailPage({ params }) {
                     </h3>
                     <p className="text-ink/60 text-sm mb-4 line-clamp-2">{r.description}</p>
                     <p className="text-ink">
-                      <span className="font-display text-2xl font-semibold">₹{r.price.toLocaleString("en-IN")}</span>
+                      <span className="font-display text-2xl font-semibold"><CountUp value={r.price} /></span>
                       <span className="text-ink/50 text-sm"> / night</span>
                     </p>
                     <span className="gold-link mt-4">

@@ -13,6 +13,7 @@ import {
 } from 'lucide-react';
 import { Reveal, SectionHeading, Eyebrow, Btn, Stars } from '@/components/ui';
 import WordReveal from '@/components/WordReveal';
+import CountUp from '@/components/CountUp';
 
 const HERO_IMG =
   '/images/1583939003579-730e3918a45a.jpg';
@@ -234,7 +235,7 @@ export default function MarriageHallPage() {
                   )}
                   <h3 className={`font-display text-3xl ${pkg.loved ? 'text-cream' : 'text-ink'}`}>{pkg.name}</h3>
                   <p className="mt-3">
-                    <span className="font-display text-4xl text-gold">{pkg.price}</span>
+                    <span className="font-display text-4xl text-gold"><CountUp value={Number(pkg.price.replace(/[^0-9]/g, ''))} /></span>
                     <span className={`text-sm ml-2 ${pkg.loved ? 'text-cream/60' : 'text-ink/50'}`}>{pkg.unit}</span>
                   </p>
                   <p className={`text-sm mt-4 leading-relaxed ${pkg.loved ? 'text-cream/70' : 'text-ink/60'}`}>

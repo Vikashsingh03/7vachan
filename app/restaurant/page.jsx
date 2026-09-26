@@ -3,6 +3,7 @@ import Link from 'next/link';
 import { ArrowRight, Clock, Mail, Phone, MapPin, Flame, Wheat, Leaf, Sparkles } from 'lucide-react';
 import Reveal from '@/components/Reveal';
 import SectionHeading from '@/components/SectionHeading';
+import CountUp from '@/components/CountUp';
 import { menuItems } from './menu-data';
 import WordReveal from '@/components/WordReveal';
 
@@ -178,7 +179,7 @@ export default function RestaurantPage() {
                       <VegDot veg={d.veg} />
                     </div>
                     <p className="text-cream/55 text-sm leading-relaxed line-clamp-2 mb-4">{d.description}</p>
-                    <p className="font-display text-xl text-gold">₹{d.price}</p>
+                    <p className="font-display text-xl text-gold"><CountUp value={d.price} /></p>
                   </div>
                 </Link>
               </Reveal>
