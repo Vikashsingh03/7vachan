@@ -9,7 +9,7 @@ export const menuItems = [
     jain: false,
     tags: ["CHEF'S SPECIAL"],
     description: 'Smoked cottage cheese marinated in garlic, hung curd and mustard oil, finished in the clay tandoor.',
-    image: 'https://images.unsplash.com/photo-1631452900516-07bfb3c846f5?q=80&w=800&auto=format&fit=crop',
+    image: 'https://images.unsplash.com/photo-1585937421612-70a008356fbe?q=80&w=800&auto=format&fit=crop',
   },
   {
     name: 'Murgh Malai Kebab',
